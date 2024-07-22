@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+import React from "react";
+import Navbar from "./components/Navbar/Navbar";
+import StyledEngineProvider from "@mui/material/StyledEngineProvider";
 import './App.css';
+//import TopAlbums from "./components/TopAlbums/TopAlbums";
+//import NewAlbums from "./components/NewAlbums/NewAlbums";
+ import Hero from "./components/Hero/Hero";
+ //import Songs from "./components/Songs/Songs";
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  return(
+  <StyledEngineProvider injectFirst>
+    <Navbar />
+    <Hero/>
+    {/* <TopAlbums/>
+    <NewAlbums/>
+    <Songs/> */}
+  </StyledEngineProvider>
+      
+   
   );
 }
 
