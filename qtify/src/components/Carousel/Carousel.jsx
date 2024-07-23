@@ -11,8 +11,8 @@ import { useEffect } from "react";
 const Controls = ({ data }) => {
   const swiper = useSwiper();
   useEffect(() => {
-  swiper.slideTo(0,1);
-  },[swiper]);
+    swiper.slideTo(0, 1);
+  }, [swiper]);
 
   return <></>;
 };
@@ -21,10 +21,11 @@ const Carousel = ({ data, renderCardComponent }) => {
   return (
     <div className={styles.carouselWrapper}>
       <Swiper
+      style={{ padding: "0px 20px" }}
         initialSlide={0}
         modules={{ Navigation }}
         slidesPerView={7}
-        spaceBetween={10}
+        spaceBetween={40}
         allowTouchMove
       >
         <Controls data={data} />

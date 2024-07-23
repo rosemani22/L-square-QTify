@@ -5,17 +5,19 @@ import './App.css';
 import TopAlbums from "./components/TopAlbums/TopAlbums";
 import NewAlbums from "./components/NewAlbums/NewAlbums";
  import Hero from "./components/Hero/Hero";
- //import Songs from "./components/Songs/Songs";
+ import Songs from "./components/Songs/Songs";
 
 
 
 function App() {
   return(
+    
     <div className="App">
     <Navbar />
     <Hero />
     <TopAlbums/>
     <NewAlbums/>
+    <Songs/>
     </div>
    
   );

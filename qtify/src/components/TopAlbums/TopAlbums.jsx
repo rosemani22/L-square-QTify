@@ -32,7 +32,7 @@ const TopAlbums = () => {
       <div className={styles.topHeader}>
         <h3>Top Albums</h3>
         <h3 className={styles.toggleText} onClick={handleToggle}>
-          {toggle ? "Show all" : "Collapse"}
+          {toggle ?  "Collapse" :"Show all" }
         </h3>
       </div>
       <div className={styles.topalbumWrapper}>
