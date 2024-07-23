@@ -2,8 +2,8 @@ import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 //import StyledEngineProvider from "@mui/material/StyledEngineProvider";
 import './App.css';
-//import TopAlbums from "./components/TopAlbums/TopAlbums";
-//import NewAlbums from "./components/NewAlbums/NewAlbums";
+import TopAlbums from "./components/TopAlbums/TopAlbums";
+import NewAlbums from "./components/NewAlbums/NewAlbums";
  import Hero from "./components/Hero/Hero";
  //import Songs from "./components/Songs/Songs";
 
@@ -14,6 +14,8 @@ function App() {
     <div className="App">
     <Navbar />
     <Hero />
+    <TopAlbums/>
+    <NewAlbums/>
     </div>
    
   );
