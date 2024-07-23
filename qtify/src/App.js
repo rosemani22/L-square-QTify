@@ -11,8 +11,9 @@ import NewAlbums from "./components/NewAlbums/NewAlbums";
 
 function App() {
   return(
-    
-    <div className="App">
+
+    <div className="App" style={{background : "black"}}>
+
     <Navbar />
     <Hero />
     <TopAlbums/>

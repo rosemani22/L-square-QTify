@@ -12,8 +12,7 @@ const Controls = ({ data }) => {
   const swiper = useSwiper();
   useEffect(() => {
     swiper.slideTo(0, 1);
-  }, [swiper]);
-
+  }, [data]);
   return <></>;
 };
 
